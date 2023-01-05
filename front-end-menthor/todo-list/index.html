@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="info">
+        <h1>Todo</h1>
+        <img src="images/icon-sun.svg" alt="change theme (sun)">
+      </div>
+      <input type="text" placeholder="Create a new todo..." autocomplete="off" id="new-todo">
+    </header>
+  
+    <div id="cards-and-actions">
+      <ul id="todo-container">
+        <!-- estrutura da li criada pelo script -->
+<!--         <li>
+          <label>
+            <input type="checkbox" name="todo" id="todo-item">
+            <p>Lorem, ipsum dolor.</p>
+            <span class="checkmark"></span>
+          </label>
+          <button class="btn-delete" onClick="removeTask(this)"><img src="images/icon-cross.svg" alt=""></button>
+        </li> -->
+      </ul>
+  
+      <footer class="actions">
+        <p id="itens-to-todo">0 items left</p>
+        <div class="principal">          
+          <button id="todo-all" class="btn-footer selected">All</button>
+          <button id="active" class="btn-footer">Active</button>
+          <button id="completed" class="btn-footer">Completed</button>
+        </div>
+        <button id="clear-completed" class="btn-footer">Clear Completed</button>
+      </footer>
+    </div>
+  </main>
+
+  <p id="text-drag-and-drop">Drag and drop to reorder list</p>
+
+  <script src="app.js"></script>
+</body>
+</html>

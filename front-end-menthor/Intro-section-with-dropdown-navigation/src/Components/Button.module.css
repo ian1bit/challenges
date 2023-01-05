@@ -1,0 +1,41 @@
+/* estilo do botao em geral */
+
+.btn {
+  border: none;
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-size: .9em;
+  font-weight: 700;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+/* estilo do botao com bordas */
+
+.border {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  transition: .3s all ease;
+}
+
+.border:hover {
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
+/* estilo do botao com background e color diferentes */
+
+.backgroudBlack {
+  color: hsl(0, 0%, 98%);
+  background: hsl(0, 0%, 8%);
+  transition: .6s all ease;
+}
+
+.backgroudBlack:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}

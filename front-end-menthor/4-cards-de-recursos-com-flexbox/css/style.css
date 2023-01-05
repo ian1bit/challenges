@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card {
+    width: 300px;
+    background: #fff;
+    margin: 10px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px 30px 30px 30px;
+    border-radius: 6px;
+}
+
+main .card h2 {
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+
+main .card p {
+    font-size: .69rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 30px;
+}
+
+main .card img {
+    width: 50px;
+    float: right;
+}
+
+
+/* CABECALHO INICIAL */
+
+.title {
+    width: 440px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.title h2 {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 15px;
+}
+
+.title p {
+    font-size: .755rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 40px;
+}
+
+main .supervisor {
+    position: relative;
+    top: 100px;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    order: 1;
+}
+
+main .team-builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    order: 2;
+}
+
+main .karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    order: 4;
+}
+
+main .calculator {
+    position: relative;
+    top: 100px;
+    border-top: 5px solid hsl(212, 86%, 64%);
+    order: 3;
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+} 
+
+@media (max-width: 960px) { 
+    .title h1 {
+        margin-top: 50px;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    main .supervisor {
+        position: static;
+        border-top: 5px solid hsl(180, 62%, 55%);
+        order: 1;
+    }
+    
+    main .team-builder {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        order: 2;
+    }
+    
+    main .karma {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        order: 3;
+    }
+    
+    main .calculator {
+        position: static;
+        border-top: 5px solid hsl(212, 86%, 64%);
+        order: 4;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .title h1 {
+        font-size: 1.55rem;
+    }
+
+    .title h2 {
+        font-size: 1.55rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+        width: 320px;
+        margin: 0 auto 50px auto;
+    }
+}
+

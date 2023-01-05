@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  height: 50px;
+  max-width: 2440px;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menuDesktop {
+  display: flex;
+}
+.menuMobile {
+  display: none;
+}
+
+.navs {
+  max-width: 1600px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navs .navButtons {
+  margin: 17px;
+}
+
+li.logo {
+  margin: 5px 50px 0 0;
+}
+
+@media (max-width: 975px) {
+  .header {
+    font-size: .9rem;
+  }
+
+  .navs .navButtons {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 702px) {
+  
+}

@@ -1,0 +1,38 @@
+.submenu {
+  position: absolute;
+  text-decoration: none;
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  padding: 0 15px;
+  background: #fff;
+  animation: test .3s forwards;
+  z-index: 1000;
+}
+
+.submenu li {
+  margin: 15px 0;
+}
+
+.submenu li a {
+  text-decoration: none;
+  font-size: .9rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  margin-left: 10px;
+  transition: .3s all ease;
+}
+
+.submenu li a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+    margin-top: 10px;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

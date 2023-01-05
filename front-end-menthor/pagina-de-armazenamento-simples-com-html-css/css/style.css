@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ESTILOS */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: hsl(229, 57%, 11%) url(../images/bg-desktop.png) no-repeat;
+  background-position-y: bottom -50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+main section.logo-info {
+  width: 300px;
+  height: 185px;
+  background: hsl(228, 56%, 26%);
+  padding: 30px;
+  margin-right: 30px;
+  border-radius: 10px 90px 10px 10px;
+}
+
+main section.logo-info .logo img {
+  max-width: 120px;
+}
+
+main .icons {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+main .icons i {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+main .icons i + i {
+  margin-left: 10px;
+}
+
+main .icons i img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+main section.storage-info {
+  position: relative;
+  width: 520px;
+  height: 150px;
+  background: hsl(228, 56%, 26%);
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 100%, 93%);
+  padding: 30px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+main section.storage-info h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+main section.storage-info h2 span {
+  font-weight: 700;
+}
+
+main section.storage-info .pop-up {
+  position: absolute;
+  top: -45px;
+  right: 27px;
+  width: 150px;
+  height: 70px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: hsl(0, 0%, 63%);
+  border-radius: 10px;
+}
+
+main section.storage-info .pop-up::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0; 
+  height: 0;
+  top: 60px;
+  right: 0;
+  border-left: 45px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #fff;
+}
+
+main section.storage-info .pop-up p span {
+  font-size: 35px;
+  color: hsl(229, 57%, 11%);
+}
+
+main section.storage-info .status-bar {
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 18px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+
+main section.storage-info .status-bar .bar {
+  content: "";
+  width: 350px;
+  height: 12px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  margin-left: 3px;
+  align-items: center;
+} 
+
+main section.storage-info .status-bar .bar .indicator {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 2px 2px 0 auto;
+}
+
+main section.storage-info p.ult {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+main section.storage-info p span.sep {
+  margin-left: 80%;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 770px) {
+  body {
+      background: hsl(229, 57%, 11%) url(../images/bg-mobile.png) no-repeat;
+      background-size: cover;
+  }
+
+  main {
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section.logo-info {
+    min-width: 320px;
+    max-width: 320px;
+    margin: 0 0 15px 0;
+  }
+
+  main section.storage-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    min-width: 320px;
+    width: 80%;
+  }
+
+  main section.storage-info h2 {
+    text-align: center;
+  }
+
+  main section.storage-info .status-bar {
+    width: 100%;
+    height: 20px;
+  }
+
+  main section.storage-info .status-bar .bar {
+    width: 75%;
+    height: 12px;
+  }
+
+  main section.storage-info .pop-up {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: -45px;
+    align-self: center;
+  }
+  
+  main section.storage-info .pop-up::after {
+    content: "";
+    position: static;
+    display: block;
+    width: 0; 
+    height: 0;
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-right: none;
+    border-top: 0;
+  }
+
+  main section.storage-info p.ult {
+    font-size: 12px;
+  }
+
+  main section.storage-info p span.sep {
+    margin-left: 67%;
+  }
+}
+

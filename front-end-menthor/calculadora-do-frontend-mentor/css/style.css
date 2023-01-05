@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* tema 1 */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(222, 26%, 31%);
+}
+
+main {
+  max-width: 400px;
+  width: 90%;
+}
+
+main header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main header h2 {
+  font-family: Spartan, sans-serif;
+  font-size: 1.35rem;
+  color: #fff;
+}
+
+main header .toogle-theme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main header .toogle-theme label {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 5px;
+  font-family: Spartan, sans-serif;
+  font-size: .55rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+main header .toogle-theme p {
+  grid-column: 2;
+  width: 49px;
+  font-family: 'Spartan', sans-serif;
+  font-size: .55rem;
+  color: #fff;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+main header .toogle-theme input[type=range] {
+  grid-column: 2;
+  grid-row: 2;
+  -webkit-appearance: none;
+  width: 40px;
+  height: 17px;
+  padding: 0px 3px 0 3px;
+  background: hsl(223, 31%, 20%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+main header .toogle-theme input[type=range]::-webkit-slider-thumb {
+  /* all: unset; */
+  -webkit-appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+
+  background: hsl(6, 63%, 50%);
+}
+
+main p#camp-numbers {
+  width: 100%;
+  height: 80px;
+  background: hsl(224, 36%, 15%);
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+
+  color: #fff;
+  font-family: Spartan, sans-serif;
+  padding: 20px 20px 0 0;
+  font-size: 2.5rem;
+  text-align: end;
+}
+
+main .botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+
+  background: hsl(223, 31%, 20%);
+  border-radius: 8px;
+}
+
+main .botoes .btn-delete {
+  background: hsl(225, 21%, 49%);
+  color: #fff;
+  font-size: .9rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0px hsl(224, 28%, 35%);
+}
+
+main .botoes .btn-reset {
+  width: 100%;
+  max-width: 150%;
+  grid-column: 1 / 3;
+
+  background: hsl(225, 21%, 49%);
+  color: #fff;
+  font-size: .9rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0px hsl(224, 28%, 35%);
+}
+
+main .botoes .btn-resultado {
+  width: 100%;
+  max-width: 150%;
+  grid-column: 3 / 5;
+
+  background: hsl(6, 63%, 50%);
+  color: #fff;
+  font-size: .9rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0px hsl(6, 70%, 34%);
+}
+
+main .botoes button {
+  min-width: 30px;
+  max-width: 75px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.3rem;
+  background: #fff;
+  opacity: .9;
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0 3px 0px hsl(217, 3%, 53%);
+  transition: .3s ease;
+}
+
+main .botoes button:hover {
+  opacity: .6;
+}

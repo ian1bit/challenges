@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo"><img src="images/logo.svg" alt="logotipo"></a>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="profile-cart">
+      <div class="button-cart">
+        <button class="cart"><img src="images/icon-cart.svg" alt="carrinho de compras"></button>
+        <section class="cart-menu">
+          <h2>Cart</h2>
+          <p>Your cart is empty.</p>
+        </section>
+      </div>  
+      <button class="profile"><img src="images/image-avatar.png" alt="avatar"></button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="imgs">
+      <div class="img-large">
+        <img src="images/image-product-1.jpg" name="0" class="img-principal active" alt="">
+        <img src="images/image-product-2.jpg" name="1" class="img-principal" alt="">
+        <img src="images/image-product-3.jpg" name="2" class="img-principal" alt="">
+        <img src="images/image-product-4.jpg" name="3" class="img-principal" alt="">
+      </div>
+      <ul>
+        <li class="active"><img src="images/image-product-1-thumbnail.jpg" name="0" alt=""></li>
+        <li><img src="images/image-product-2-thumbnail.jpg" name="1" alt=""></li>
+        <li><img src="images/image-product-3-thumbnail.jpg" name="2" alt=""></li>
+        <li><img src="images/image-product-4-thumbnail.jpg" name="3" alt=""></li>
+      </ul>
+    </section>
+
+    <section class="product-info">
+      <h2 class="top-product">Sneaker Company</h2>
+      <h1 class="title-product">Fall Limited Edition Sneakers</h1>
+      <p class="description-product">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <h1 class="value-discount">$125.00</h1>
+        <h2 class="discount">50%</h2>
+        <h2 class="value">$250.00</h2>
+      </div>
+
+      <div class="cart-options">
+        <div class="add-or-remove-itens">
+          <button class="minus quantity-btn">-</button>
+          <p class="itens-quatity">0</p>
+          <button class="plus quantity-btn">+</button>
+        </div>
+
+        <div class="button-add-cart">
+          <button class="add-to-cart"><img src="images/icon-cart.svg" alt="">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

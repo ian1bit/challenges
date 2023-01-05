@@ -1,0 +1,103 @@
+.main {
+  position: relative;
+  display: grid;
+  padding: 5rem;
+  gap: 50px;
+  width: 80vw;
+  max-width: 1300px;
+  height: 90vh;
+  max-height: 700px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imgHero {
+  width: 85%;
+  max-width: 400px;
+  min-width: 390px;
+  grid-column: 2;
+  grid-row: 1 / span;
+  justify-self: end;
+}
+
+/* estilizacao da parte de infos */
+
+.info {
+  max-width: 470px;
+  max-height: 90%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.info h1 {
+  font-size: 4rem;
+  color: hsl(0, 0, 8%);
+  margin-bottom: 50px;
+}
+
+.info p {
+  color: hsl(0, 0%, 41%);
+  font-size: 1rem;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.clients {
+  margin-top: 30px;
+  display: flex;
+  bottom: 80px;
+  align-items: center;
+}
+
+.clients img {
+  width: 100%;
+}
+
+.clients a + a {
+  padding: 0 10px;
+}
+
+@media (max-width: 1300px) {
+  .info h1 {
+    font-size: 3rem;
+  }
+
+  .info p {
+    font-size: .9rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .imgHero {
+    min-width: 320px;
+  }
+
+  .info {
+  min-height: 400px;
+  }
+
+  .clients img {
+    width: 80%;
+  }
+
+  .clients a + a {
+    padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    height: 100vh;
+    max-height: none;
+    padding: 0;
+  }
+}
