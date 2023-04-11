@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +10,59 @@ ol, ul {
   list-style: none;
 }
 
-header {
-  width: 100vw;
-  display: flex;
-  padding: 75px 75px 50px 75px;
+/* Fontes de texto */
+
+@font-face {
+  font-family: "Inter Regular";
+  src: local(Inter), url(assets/fonts/static/Inter-Regular.ttf);
 }
 
-header nav {
+@font-face {
+  font-family: "Inter Regular";
+  src: local(Inter), url(assets/fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: local(Inter), url(assets/fonts/static/Inter-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+/* Códogio geral */
+
+body {
+  background: hsl(36, 100%, 99%);
+  font-family: "Inter Regular", monospace, sans-serif;
+}
+
+header {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  padding: 70px 70px 50px 70px;
+}
+
+.logo {
   width: 100%;
 }
 
-header nav ul {
+header nav {
+  width: 90%;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li.nav-option {
+  font-family: "Inter Regular", monospace, sans-serif;
+  color: hsl(236, 13%, 42%);
 }
 
 /* diminuindo tamanho da imagem para melhor vizualização */
