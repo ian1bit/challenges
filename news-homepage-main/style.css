@@ -10,7 +10,12 @@ ol, ul {
   list-style: none;
 }
 
-/* Fontes de texto */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fontes de texto e cores */
 
 @font-face {
   font-family: "Inter Regular";
@@ -29,16 +34,24 @@ ol, ul {
   font-weight: 800;
 }
 
-/* Códogio geral */
+
+
+/* cabeçalho */
 
 body {
   background: hsl(36, 100%, 99%);
   font-family: "Inter Regular", monospace, sans-serif;
 }
 
+.container {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 header {
   width: 100vw;
-  max-width: 100%;
+  max-width: 1440px;
   display: flex;
   padding: 70px 70px 50px 70px;
 }
@@ -63,10 +76,20 @@ header nav ul {
 header nav ul li.nav-option {
   font-family: "Inter Regular", monospace, sans-serif;
   color: hsl(236, 13%, 42%);
+  cursor: pointer;
+  padding: 5px;
+  transition: all .3s ease;
 }
 
-/* diminuindo tamanho da imagem para melhor vizualização */
+header nav ul li.nav-option:hover {
+  color: hsl(5, 85%, 63%);
+}
 
-.container .highlight-info img {
-  width: 50%;
+/* main */
+
+main {
+  width: 100vw;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
